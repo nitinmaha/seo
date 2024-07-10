@@ -1,95 +1,52 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+import Button from "@/components/Button/Button";
+import styles from "./page.module.scss";
+import OurService from "@/components/Pages/Home/OurService/OurService";
+import Portfolio from "@/components/Pages/Home/Portfolio/Portfolio";
+import WhyChoose from "@/components/Pages/Home/WhyChoose/WhyChoose";
+import Elevate from "@/components/Pages/Home/Elevate/Elevate";
+import Blogs from "@/components/Pages/Home/Blogs/Blogs";
+import Footer from "@/components/Footer/Footer";
+import Reviews from "@/components/Pages/Home/Reviews/Reviews";
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.js</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <>
+      <div className={styles.banner}>
+        <div className={`${styles.wrapper} wrapper`}>
+          <div className={styles.bannerContent}>
+            <h1>A Digital Agency With a Passion for Marketing</h1>
+            <p>
+              The ultimate digital marketing agencies with years of experience,
+              we understand the need to create a robust online sight for brands,
+              no matter how big or small.
+            </p>
+            <div>
+              <Button branding="primary" label="Contact" link="/#" />
+            </div>
+          </div>
         </div>
       </div>
-
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore starter templates for Next.js.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+      <>
+        <OurService />
+      </>
+      <>
+        <Portfolio />
+      </>
+      <>
+        <WhyChoose />
+      </>
+      <>
+        <Elevate />
+      </>
+      <>
+        <Blogs />
+      </>
+      <>
+        <Reviews />
+      </>
+      <>
+        <Footer />
+      </>
+    </>
   );
 }

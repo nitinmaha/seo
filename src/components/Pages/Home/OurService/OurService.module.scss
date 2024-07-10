@@ -1,0 +1,30 @@
+.ourService {
+  padding: 60px 0;
+  background-color: #131313;
+  color: #fff;
+
+
+  p {
+    text-align: center;
+  }
+
+  .imageGallery {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .galleryImage {
+    width: 250px;
+    height: auto;
+    cursor: pointer;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    transition: transform 0.2s;
+    margin: 0 5px;
+  }
+
+  .galleryImage:hover {
+    transform: scale(1.05);
+  }
+}

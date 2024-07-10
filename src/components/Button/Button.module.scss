@@ -1,0 +1,19 @@
+.base {
+  padding: 12px 15px;
+  border-radius: 6px;
+  text-transform: uppercase;
+  min-width: 140px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+
+  &.primary {
+    background-color: #F20D94;
+    color: #fff;
+
+    &:hover {
+      background-color: darken($color: #F20D94, $amount: 20%);
+    }
+  }
+}

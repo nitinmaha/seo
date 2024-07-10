@@ -1,0 +1,39 @@
+.banner {
+  background: url(../assets/img/banner.jpg) no-repeat center center;
+  background-size: cover;
+  background-color: #333;
+  color: #fff;
+  padding: 76px 0 0;
+  position: relative;
+  z-index: 11;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba($color: #000000, $alpha: 0.5);
+    z-index: -1;
+  }
+
+  .bannerContent {
+    max-width: 720px;
+    display: flex;
+    flex-direction: column;
+    min-height: 720px;
+    justify-content: center;
+
+    h1 {
+      font-size: 60px;
+      margin-bottom: 20px;
+    }
+    p {
+      font-size: 18px;
+      margin-bottom: 20px;
+      line-height: 24px;
+    }
+  }
+}
+

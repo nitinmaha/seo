@@ -1,0 +1,45 @@
+.portfolioTop {
+  text-align: center;
+  background: #f20d94;
+  padding: 45px 0;
+  color: #fff;
+}
+
+.portfolioBottom {
+  padding: 60px 0;
+
+  .portListing {
+    display: flex;
+    flex-wrap: wrap;
+
+    .portItem {
+      width: 50%;
+      padding-right: 50px;
+      margin-bottom: 80px;
+
+      display: flex;
+      align-items: flex-start;
+
+      .icon {
+        width: 120px;
+        font-size: 50px;
+        color: #202647;
+        display: flex;
+        justify-content: center;
+      }
+
+      .details {
+        width: calc(100% - 120px);
+        padding-right: 120px;
+
+        .heading {
+          font-size: 24px;
+          text-transform: uppercase;
+          font-weight: bold;
+          color: #F20D94;
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+}
